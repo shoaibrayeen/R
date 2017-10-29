@@ -1,4 +1,4 @@
-readInput<-function(){
+readInput<-function() {
 	j<-0
 	n<-readline("size : ")
 	array<-as.numeric()
@@ -9,6 +9,7 @@ readInput<-function(){
 	}
 	return array
 }
+
 Mean<-function(array) {
 	return (sum(array)/length(array))
 }
