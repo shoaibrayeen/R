@@ -9,6 +9,7 @@ readInput<-function(){
 	}
 	return array
 }
+
 Median<-function(array) {
 	temp<-sort(array)
 	n<-length(temp)
@@ -19,5 +20,6 @@ Median<-function(array) {
 		return ( 0.5 * ( temp[n/2] + temp[(n/2)+1] ) )
 	}
 }
+
 array<-readInput()
 Median(array)
