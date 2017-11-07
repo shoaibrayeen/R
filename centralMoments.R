@@ -16,6 +16,11 @@ readInput<-function(){
 array<-readInput()
 r<-readline("rth Moment : ")
 
+#This function Calculates the arithmetic mean of An Array 
+Mean<-function(array) {
+	return (sum(array)/length(array))
+}
+
 #This function Calculates central moments of A raw Data
 centralMoments<-function(array , r ) {
 	total<-length(array)
@@ -28,7 +33,7 @@ centralMoments<-function(array , r ) {
 	}
 	else {
 		temp<-0
-		mul<-1
+		temp1<-0
 		for(i in 1:total) {
 			temp1<-(array[i]-mean)**r
 			temp<-temp + temp1
