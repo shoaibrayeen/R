@@ -20,6 +20,25 @@ Mean<-function(array) {
 	return (sum(array)/length(array))
 }
 
+#This function Calculates population variance of An Array
+PopulationVariance<-function(array){
+	temp<-0
+	total<-length(array)
+	mean<-Mean(array)
+	for(i in 1:total){
+		temp <- temp + (array[i]-mean)*(array[i]-mean)
+	}
+	temp <- temp / length(array)	
+	return temp
+}
+
+#This function Calculates population standard Deviation of An Array
+PopulationSD<-function(array){
+	temp<-PopulationVariance(array)
+	temp<-sqrt(temp)
+	return temp
+}
+
 #This function Calculates central moments of A raw Data
 centralMoments<-function(array , r ) {
 	total<-length(array)
