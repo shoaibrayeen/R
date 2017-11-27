@@ -20,13 +20,13 @@ combination<-function(n,r){
 #total = total number of trials 
 #probability=probability of success
 binomial<-function(favourable , total , probability ) { 
-		prob<-combination(total,fav)*(prob**fav)((1-prob)**(total-fav)) #using combination function
-	  return(prob)
+	prob<-combination(total,favourable)*(probability**favourable)((1-probability)**(total-favourable)) #using combination function
+	return(prob)
 }
 
-favourabl<-readline("favourabl Trials : ")
+favourable<-readline("favourable Trials : ")
 total<-readline("total Trials : ")
 probability<-readline("probability of success : ")
 
 
-binomial(favourabl , total , probability )
+binomial(favourable , total , probability )
