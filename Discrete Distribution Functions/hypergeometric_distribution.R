@@ -36,7 +36,7 @@ hypergeometric_distribution<-function(x,N,M,n) {
 }
 
 N<-readline("Total Population : ")
-M<-readline("Total Number of Objects out of N  : "(
+M<-readline("Total Number of Objects out of N  : ")
 n<-readline("number of random draws : ")
 x<-readline("number of successes in n draws : ")
 
