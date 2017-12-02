@@ -28,3 +28,5 @@ beta<-readline("Parameter Beta : ")
 
 low<-readline("Lower Limit to integrate Function : ")
 high<-readline("Upper Limit to integrate Function : ")
+
+gamma( alpha , beta ,low , high )
