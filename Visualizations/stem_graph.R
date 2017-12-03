@@ -7,11 +7,11 @@ readInput<-function() {
 		array<-as.numeric(c(array,y))
 		j<-j+1
 	}
-	return array
+	return(array)
 }
 
 stem <- function(data) {
-  	stem(data)
+  	return(stem(data))
 }
 data<-readInput()
 stem(data)
