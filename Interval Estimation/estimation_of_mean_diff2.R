@@ -32,4 +32,4 @@ sVar2<-readline("Sample Variance for 2nd sample: ")
 n2<-readline("Sample Size for 2nd sample: ")
 
 alpha<-readline("Level of Significance : ")
-estDiffMean2(avg1,avg2,pVar1,pVar2,n1,n2,alpha)
+estDiffMean2(avg1,avg2,sVar1,sVar2,n1,n2,alpha)
