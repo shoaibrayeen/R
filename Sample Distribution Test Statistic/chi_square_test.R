@@ -3,7 +3,7 @@
 
 chiSquaretest<-function(sVariance , pVariance ,n ,alpha,flag) {
 	df<-ln-1
-	chi<-df*sVariance/pVarianc
+	chi<-df*sVariance/pVariance
 	pvalue<-pchisq(chi,df)
 	if(flag==0) {
 		pvalue<-2*pvalue
