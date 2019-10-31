@@ -1,1 +1,1 @@
-# This repository contains all statistic codes in R.
+# This repository contains statistical programs written in R.
