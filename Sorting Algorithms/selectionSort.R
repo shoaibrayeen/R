@@ -1,20 +1,26 @@
-bubble_sort <- function(x)
+selection_sort <- function(x)
 {
-    # calculate the length of array
+      # length of array
     n <- length(x)
-             # run loop n-1 times
-        for (i in 1 : (n - 1)) {
-              # run loop (n-i) times
-            for (j in 1 : (n - i)) {
-                  # compare elements
-                if (x[j] > x[j + 1]) {
-                    temp <- x[j]
-                      x[j] <- x[j + 1]
-                      x[j + 1] <- temp
-                }
+      for (i in 1 : (n - 1))
+    {
+          # assume element at i is minimum
+        min_index <- i
+          for (j in (i + 1) : (n))
+        {
+              # check if element at j is smaller
+              # than element at min_index
+            if (x[j] < x[min_index]) {
+                  # if yes, update min_index
+                min_index = j
             }
         }
-      x
+          # swap element at i with element at min_index
+        temp <- x[i]
+          x[i] <- x[min_index]
+          x[min_index] <- temp
+    }
+    x
 }
  
 # take 19 random numbers between 1 - 100
@@ -26,7 +32,7 @@ arr
 
 # sort the array and store the result
 # in sorted_array
-sorted_array <- bubble_sort(arr)
+sorted_array <- selection_sort(arr)
  
 # print sorted_array
 print("Sorted Array : ");
